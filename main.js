@@ -5,10 +5,12 @@ var asi = 'https://core.subsplash.com/accounts/v1/app-store-infos/P5G6Q5'
 var jwt = process.env.accounts
 
 function updateASI(url) {
+    console.log('url')
+    console.log(url)
     let data = JSON.stringify({
         secondary_app_title: 'test title'
     })
-    
+    console.log(jwt)
     let headers = {
         'Authorization': 'Bearer ' + jwt
     }
@@ -20,5 +22,6 @@ function updateASI(url) {
 }
 
 Apify.main(async () => {
-   updateASI(asi)
+    console.log('start')
+    updateASI(asi)
 });
