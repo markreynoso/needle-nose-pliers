@@ -22,7 +22,7 @@ const Apify = require('apify');
 //     return res
 // }
 
-Apify.main(() => {
+Apify.main(async () => {
     let data = await axios.get('https://apps.apple.com/us/app/id4422025270').then(res => console.log(res))
     console.log(data)
     return data
