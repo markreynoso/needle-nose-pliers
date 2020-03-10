@@ -19,6 +19,6 @@ function updateASI(url) {
         .catch(err => console.log(err.response))
 }
 
-Apify.main(() => {
-    updateASI(asi)
-});
+// Apify.main(() => {
+// });
+updateASI(asi)
