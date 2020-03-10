@@ -9,10 +9,12 @@ function updateASI(url) {
         secondary_app_title: 'test title'
     }
     let headers = {
-        'Authorization': 'Bearer ' + jwt
+        Authorization: 'Bearer ' + jwt
     }
     console.log(data)
     console.log(headers)
+    axios.get(url, headers).then(res => console.log(res))
+    
     axios.patch(url, data, headers)
         .then(response => {
             console.log(response)
