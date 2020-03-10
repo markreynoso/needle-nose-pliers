@@ -1,5 +1,5 @@
-import axios from 'axios';
-import * as Apify from 'apify';
+const axios = require('axios');
+const Apify = require('apify');
 
 var asi = 'https://core.subsplash.com/accounts/v1/app-store-infos/P5G6Q5'
 var jwt = process.env.accounts
