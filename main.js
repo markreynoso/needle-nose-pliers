@@ -25,6 +25,5 @@ const Apify = require('apify');
 Apify.main(async () => {
     let data = await axios.get('https://apps.apple.com/us/app/id442025270').then(res => console.log(res))
     console.log(data)
-    return data
     // updateASI(asi)
 });
