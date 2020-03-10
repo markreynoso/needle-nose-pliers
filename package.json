@@ -5,7 +5,7 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "node main.js"
+    "start": "node --experimental-modules main.js"
   },
   "repository": {
     "type": "git",
