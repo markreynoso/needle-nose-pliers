@@ -1,4 +1,5 @@
-const Axios = require('axios');
+import axios from 'axios';
+
 const Apify = require('apify');
 
 var asi = 'https://core.subsplash.com/accounts/v1/app-store-infos/P5G6Q5'
@@ -8,12 +9,12 @@ function updateASI(url) {
     let data = JSON.stringify({
         secondary_app_title: 'test title'
     })
-
+    
     let headers = {
         'Authorization': 'Bearer ' + jwt
     }
 
-    Axios.post(url, data, headers)
+    axios.post(url, data, headers)
         .then(response => {
             console.log(response)
         });
