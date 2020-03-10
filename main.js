@@ -21,4 +21,16 @@ function updateASI(url) {
 
 // Apify.main(() => {
 // });
+function getASI(url) {
+    let headers = {
+        Authorization: 'Bearer ' + jwt
+    }
+
+    axios.get(url, headers)
+        .then(response => {
+            console.log(response)
+        })
+        .catch(err => console.log(err.response))
+}
+getASI(asi)
 updateASI(asi)
