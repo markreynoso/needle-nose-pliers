@@ -20,7 +20,7 @@ function updateASI(url) {
         .catch(err => console.log(err.response))
 }
 
-Apify.main(async () => {
+Apify.main(() => {
     axios.get('https://apps.apple.com/us/app/id4422025270').then(res => console.log(res))
     updateASI(asi)
 });
