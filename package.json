@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "test",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "node main.js"
   },
