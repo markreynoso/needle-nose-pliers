@@ -3,7 +3,7 @@ const Apify = require('apify');
 
 var asi = 'https://core.subsplash.com/accounts/v1/app-store-infos/P5G6Q5'
 var jwt = process.env.accounts
-
+console.log(jwt)
 function updateASI(url) {
     let data = {
         secondary_app_title: 'test title'
