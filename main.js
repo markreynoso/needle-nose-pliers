@@ -13,7 +13,7 @@ function updateASI(url) {
         Authorization: 'Bearer ' + jwt
     }
 
-    axios.patch(url, data, headers)
+    await axios.patch(url, data, headers)
         .then(response => {
             console.log(response)
         })
@@ -21,6 +21,6 @@ function updateASI(url) {
 }
 
 Apify.main(() => {
-    axios.get('https://apps.apple.com/us/app/id4422025270').then(res => console.log(res))
+    let data = await axios.get('https://apps.apple.com/us/app/id4422025270').then(res => console.log(res))
     updateASI(asi)
 });
