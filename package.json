@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/markreynoso/needle-nose-pliers#readme",
   "dependencies": {
+    "apify": "^0.20.2",
     "axios": "^0.19.2"
   }
 }
