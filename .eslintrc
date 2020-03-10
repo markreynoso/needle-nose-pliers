@@ -1,0 +1,8 @@
+{
+    "parserOptions": {
+        "ecmaFeatures": {
+          "ecmaVersion": 8,
+            "experimentalObjectRestSpread": true,
+        },
+    },
+}

@@ -1,0 +1,22 @@
+{
+  "name": "needle-nose-pliers",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markreynoso/needle-nose-pliers.git"
+  },
+  "author": "Mark Reynoso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markreynoso/needle-nose-pliers/issues"
+  },
+  "homepage": "https://github.com/markreynoso/needle-nose-pliers#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
