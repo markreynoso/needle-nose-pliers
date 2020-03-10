@@ -13,11 +13,13 @@ function updateASI(url) {
         Authorization: 'Bearer ' + jwt
     }
 
-    await axios.patch(url, data, headers)
+    let res = await axios.patch(url, data, headers)
         .then(response => {
             console.log(response)
         })
         .catch(err => console.log(err.response))
+    
+    return res
 }
 
 Apify.main(() => {
