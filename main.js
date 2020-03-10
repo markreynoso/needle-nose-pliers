@@ -12,7 +12,7 @@ function updateASI(url) {
         Authorization: 'Bearer ' + jwt
     }
     
-    axios.patch(url, data, {headers})
+    axios.patch(url, data, headers)
         .then(response => {
             console.log(response)
         })
@@ -26,7 +26,7 @@ function getASI(url) {
         Authorization: 'Bearer ' + jwt
     }
     console.log(headers)
-    axios.get(url, headers)
+    axios.get(url, {headers})
         .then(response => {
             console.log(response)
         })
